@@ -21,10 +21,9 @@ import com.api.open.crud.api.entity.BaseEntity;
 
 
 
-// @Entity
+
 @AllArgsConstructor
 @NoArgsConstructor
-// @Table(name = "account")
 @Data
 @MappedSuperclass
 public class AccountEntityModel extends BaseEntity<Long>
@@ -39,13 +38,6 @@ private Long id;
 @Column(name = "name")
 @NaturalId
 private String name;
-
-
-@Override
-public List<String> getTableHeaderNames() {
-throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-}
-
 
 @Override
 public String updatedByColumn() {

@@ -12,12 +12,10 @@ import com.api.open.crud.api.entity.BaseEntity;
 import java.io.Serializable;
 import java.util.List;
 import javax.persistence.Column;
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
-import javax.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -27,10 +25,8 @@ import org.hibernate.annotations.NaturalId;
  *
  * @author NMSLAP570
  */
-// @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-// @Table(name = "user")
 @Data
 @MappedSuperclass
 public class UserEntityModel extends BaseEntity<Long>
@@ -49,13 +45,6 @@ public class UserEntityModel extends BaseEntity<Long>
     
     @Column(name = "username")
     private String username;
-
-
-    @Override
-    public List<String> getTableHeaderNames() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
 
     @Override
     public String updatedByColumn() {
