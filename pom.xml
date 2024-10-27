@@ -8,8 +8,8 @@
 		<version>2.7.12</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.open</groupId>
-	<artifactId>feign-client</artifactId>
+	<groupId>com.api</groupId>
+	<artifactId>open-feign-client</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>feign-client</name>
 	<packaging>jar</packaging>

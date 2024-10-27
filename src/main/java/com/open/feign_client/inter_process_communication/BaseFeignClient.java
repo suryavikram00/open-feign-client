@@ -1,4 +1,4 @@
-package com.open.feign_client.feignclient;
+package com.open.feign_client.inter_process_communication;
 
 
 
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import com.api.open.crud.api.exception.model.CrudApiResponse;
 
-public interface OpenFeignClient<T> {
+public interface BaseFeignClient<T> {
 
     @GetMapping("/{id}")
     ResponseEntity<CrudApiResponse<T>> getData(@PathVariable("id") int id);
