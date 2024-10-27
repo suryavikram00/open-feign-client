@@ -176,7 +176,7 @@
         <repository>
             <id>github</id>
             <name>GitHub Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/suryavikram00/open-crud-api</url>
+            <url>https://maven.pkg.github.com/suryavikram00/open-feign-client</url>
         </repository>
     </distributionManagement>
 
